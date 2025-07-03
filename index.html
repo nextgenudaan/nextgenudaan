@@ -40,16 +40,24 @@
 <body class="bg-gradient-to-br from-blue-900 via-blue-800 to-green-500 text-white font-sans overflow-hidden">
 
   <!-- Header/Navbar -->
-  <header class="w-full flex justify-between items-center px-6 py-4 bg-blue-900/40 backdrop-blur-sm fixed top-0 z-50">
-    <div class="text-xl font-bold tracking-wide">NextGen Udaan</div>
-    <div class="flex items-center space-x-4 text-sm md:text-base">
-      <a href="./blogs.html" class="hover:underline hover:text-green-300">Blogs - How to Earn</a>
-      <button onclick="openDialog('aboutDialog')" class="hover:underline hover:text-green-300">About Us</button>
-      <a href="https://instagram.com/nextgenudaan" target="_blank" class="hover:scale-110 transition">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-7 h-7 rounded-full" />
-      </a>
-    </div>
-  </header>
+  <!-- Header/Navbar -->
+<header class="w-full flex justify-between items-center px-6 py-4 bg-blue-900/40 backdrop-blur-sm fixed top-0 z-50">
+  <a href="https://nextgenudaan.github.io" class="text-xl font-bold tracking-wide hover:text-green-300 transition-transform transform hover:-translate-y-1 hover:scale-105 duration-300 ease-out">
+    NextGen Udaan
+  </a>
+  <div class="flex items-center space-x-4 text-sm md:text-base">
+    <a href="./blogs.html" class="hover:text-green-300 transition-transform transform hover:-translate-y-1 hover:scale-105 duration-300 ease-out">
+      Blogs - How to Earn
+    </a>
+    <button onclick="openDialog('aboutDialog')" class="hover:text-green-300 transition-transform transform hover:-translate-y-1 hover:scale-105 duration-300 ease-out">
+      About Us
+    </button>
+    <a href="https://instagram.com/nextgenudaan" target="_blank" class="transition-transform transform hover:-translate-y-1 hover:scale-110 duration-300 ease-out drop-shadow-lg">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="w-7 h-7 rounded-full" />
+    </a>
+  </div>
+</header>
+
 
   <!-- Dialogs -->
   <div id="aboutDialog" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
