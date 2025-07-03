@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +22,17 @@
       scrollbar-color: #22c55e #1e3a8a;
       scrollbar-width: thin;
     }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
   </style>
 </head>
 <body class="bg-gradient-to-br from-blue-900 via-blue-800 to-green-500 text-white font-sans overflow-hidden">
 
-<header class="w-full flex justify-between items-center px-6 py-4 bg-blue-900/40 backdrop-blur-sm fixed top-0 z-50">
+<header class="glass w-full flex justify-between items-center px-6 py-4 fixed top-0 z-50 rounded-b-xl">
   <a href="https://nextgenudaan.github.io" class="text-xl font-bold tracking-wide hover:text-green-300 transition-transform transform hover:-translate-y-1 hover:scale-105 duration-300 ease-out">NextGen Udaan</a>
   <div class="flex items-center space-x-4 text-sm md:text-base">
     <a href="./blogs.html" class="hover:text-green-300 transition-transform transform hover:-translate-y-1 hover:scale-105 duration-300 ease-out">Blogs - How to Earn</a>
@@ -39,19 +44,19 @@
 </header>
 
 <div id="aboutDialog" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50">
-  <div class="bg-blue-800 text-white rounded-2xl shadow-2xl max-w-2xl p-6 relative">
+  <div class="glass text-white rounded-2xl shadow-2xl max-w-2xl p-6 relative">
     <button onclick="closeDialog('aboutDialog')" class="absolute top-3 right-4 text-white text-xl font-bold hover:text-red-400">&times;</button>
     <h2 class="text-3xl font-bold mb-4 text-center">Why Fly With Us?</h2>
     <p class="text-lg leading-relaxed text-center">
       NextGen Udaan empowers ambitious hustlers across India to build a future‑proof digital business with 
-      <span class="font-semibold">zero investment</span>, ethical marketing, and ✨ unstoppable community energy ✨.<br><br>
+      <span class="font-semibold">zero investment</span>, ethical marketing, and unstoppable community energy ✨.<br><br>
       You bring the hunger. We bring the roadmap.
     </p>
   </div>
 </div>
 
 <div id="formDialog" class="hidden fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50 px-4">
-  <div class="bg-blue-800 text-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] p-6 relative overflow-y-auto">
+  <div class="glass text-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] p-6 relative overflow-y-auto">
     <button onclick="closeDialog('formDialog')" class="absolute top-3 right-4 text-white text-xl font-bold hover:text-red-400">&times;</button>
     <h3 class="text-2xl font-semibold mb-6 text-green-300 text-center">Request Your Free Onboarding Call</h3>
     <div class="rounded-xl overflow-hidden">
@@ -61,13 +66,13 @@
 </div>
 
 <main class="min-h-screen flex flex-col items-center justify-center pt-28 px-4">
-  <section class="text-center max-w-2xl">
+  <section class="glass text-center max-w-2xl p-8 rounded-2xl shadow-xl">
     <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-4 transition-transform transform hover:scale-105 duration-300 ease-in-out hover:text-green-300 hover:drop-shadow-[0_0_15px_#22c55e]">NextGen <span class="text-green-300">Udaan</span></h1>
     <p class="text-xl md:text-2xl font-medium mb-6">Soch Badal, Zindagi Badal. <br class="hidden md:block" /> Leader Ban, Follower Nahi.</p>
     <button onclick="openDialog('formDialog')" class="inline-block bg-green-400 hover:bg-green-300 text-blue-900 font-bold px-8 py-3 rounded-2xl shadow-lg transition-transform transform hover:scale-105 duration-300 ease-in-out hover:drop-shadow-[0_0_15px_#22c55e]">Join the Udaan Tribe 🚀</button>
   </section>
 
-  <section id="about" class="max-w-3xl mt-10 px-6 text-center">
+  <section id="about" class="glass max-w-3xl mt-10 px-6 py-6 text-center rounded-2xl shadow-xl">
     <h2 class="text-3xl font-bold mb-4">Why Fly With Us?</h2>
     <p class="text-lg leading-relaxed mb-8">
       NextGen Udaan empowers ambitious hustlers across India to build a future‑proof digital business with 
@@ -97,6 +102,5 @@
     }
   });
 </script>
-
 </body>
 </html>
